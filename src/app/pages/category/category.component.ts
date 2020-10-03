@@ -1,6 +1,5 @@
+import { CategoryService } from './../../services/category.service';
 import { Component, OnInit } from '@angular/core';
-import { CategoryService } from 'src/app/services/category.service';
-
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -14,6 +13,7 @@ export class CategoryComponent implements OnInit {
   
   get CategoryList() {
     return this.categoryService.getAllCategory();
+  
   }
 
 }
